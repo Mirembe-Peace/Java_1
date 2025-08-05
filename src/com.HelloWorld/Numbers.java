@@ -62,5 +62,25 @@ public class Numbers {
             numbers--;
             System.out.print(numbers);
         } while(numbers > 0);
+
+        //for loops
+        for(int f = 1; f <= 10; f++) {
+            System.out.println(f + " ");
+        }
+
+        //nested for loop
+        for(int r = 1; r <= 10; r++) {
+                for(int k = 4; k > 0; k--){
+                    System.out.println(k + " ");  // the inner for loop is executed (outerlooptimes * innerlooptimes)
+                }
+                System.out.println("one loop complete");
+        }
+
+        //for each loop
+        //used for elements in an array
+        String[] cars = {"ford", "bugatti", "escalade"};
+        for (String h: cars) {
+            System.out.println(h);
+        }
     }
 }
