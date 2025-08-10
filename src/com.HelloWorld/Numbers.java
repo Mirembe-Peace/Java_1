@@ -1,5 +1,5 @@
 package com.HelloWorld;
-
+    // Operations in java 🍵
 public class Numbers {
     public static void main(String[] args){
         //declaring variables works the same way as in C
@@ -82,5 +82,55 @@ public class Numbers {
         for (String h: cars) {
             System.out.println(h);
         }
+
+        // 😁 a break statement can also be used to jump out of a for loop using an if statement
+        String[] new_cars = {"honda_civic", "lamborgini", "mustang", "harrier", "escalade"};
+        for (String p: new_cars) {
+            if (p == "harrier") {
+                break;
+            }
+            System.out.print(p);
+        }
+
+        for (String w: new_cars) {
+            if (w == "harrier") {
+                continue;
+            }
+            System.out.println(w);
+        }
+
+
+        // 😊 getting the length of array
+        System.out.println(new_cars.length);
+
+        // 😎 Looping through an array
+        String[] planes = {"Boeing", "Airbus", "Spirit"};
+        for (int l = 0; l < planes.length; l++) {
+            System.out.println(planes[l]);
+        }
+
+        // 🤩 Multidimensional Arrays
+        // This is an array of arrays
+        int[][] number_matrix = {{3,5,7}, {2,4,6}};
+        System.out.println(number_matrix[0][2]);
+
+        number_matrix[0][2] = 9;
+        System.out.println(number_matrix[0][2]);
+
+        // 👍looping through a multidimensional array
+        for (int first_array = 0; first_array < number_matrix.length; ++first_array) {
+            for (int second_array = 0; second_array < number_matrix[first_array].length; ++second_array){
+                System.out.println(number_matrix[first_array][second_array]);
+            }
+        }
+
+        // 🩵🩵looping through a multidimensional array using the "for each" method
+
+        for (int[] mother_array: number_matrix){
+            for(int children_arrays: mother_array){
+                System.out.println(children_arrays);
+            }
+        }
+
     }
 }
